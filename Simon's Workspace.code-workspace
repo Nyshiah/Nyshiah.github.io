@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../digital-clock"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Simon",
+		"liveServer.settings.port": 5501
+	}
+}

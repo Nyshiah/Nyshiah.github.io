@@ -1,0 +1,256 @@
+body {
+    background-color:#69563c ;
+    /* background-image: url(Beach.jpg),  ;  /* The image used as a background */
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-image: linear-gradient(red blue pink);
+    
+}
+
+#title {
+    color:#ffebd0;
+    cursor: help;
+}
+#heading1 {
+    color: #ffecdf ;
+}
+
+h5 { color:#f2cf97;
+
+}
+
+p {
+    color: #F7E7CE ;
+}
+
+/* unvisited link */
+ #w3school1:link  {
+    color: #ffffff ;
+}
+
+/* visited link */
+ #w3school1:visited {
+    color: aqua ;
+}
+
+/* mouse over link */
+ #w3school1:hover {
+    color:brown ;
+}
+
+/* selected link */
+#w3school1:active {
+    color:darkblue ;
+}
+
+/* img {
+    height: 140px;
+    width: 190px;
+    border-radius: 2em;
+    position: static;
+   top: 50%; 
+   left: 20px;
+    bottom: 50px;
+    transform: translate(14%, 10%);
+} */
+    /* nicht anfassen!! */
+    img {
+      height: 140px;
+      width: 190px;
+      border-radius: 2em;
+      position: relative;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+
+/* 
+item:hover img{
+    ;
+} */
+
+
+.firstbox {
+    margin: 10px fixed;
+    border: 5px #37271c dashed;
+    border-radius: 7em;
+    padding: 20px;
+    width: 20%;
+    background-color: #3b301f;
+    position: relative; /*Important!!!*/
+    /* display: flex; */
+    /* place-content: center; */
+    /* place-items: center; */
+    overflow: hidden;
+    position: static;
+    
+} 
+/* Irelleant
+.firstbox ::before {
+    content: '';
+    position: absolute;
+    width: 100;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+@keyframes rotBGimg{
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.firstbox: ::after {
+    content: "";
+    position: absolute;
+    background:     blue;
+    ;
+    inset:5px;
+} */
+
+
+.secondbox {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #3b301f;
+    border-radius: 7em;
+    padding: 20px;
+    width: 15%;
+}
+
+.secondbox h3 {
+    color: #F7E7CE;
+    font-family: Arial,  ;
+}
+
+#mountain {
+  size: 50px;
+}
+
+#Peom {
+    width: 150px;
+    height: 75px;
+    padding: 20px;
+    border: 2px solid;
+    padding-right: 5em;
+}
+
+/* Card WHOOSH thingy */
+#Pretty {
+    position: absolute ;
+}
+.card {
+    width: 190px;
+    height: 254px;
+    background: #3b301f;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, #f2cf97, #f2cf97);
+    height: 130%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #3b301f;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  /* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+
+
+  /* Card Woosh thinly End */
+
+/* Flipping card */
+.cardFlip {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .card-innerFlip {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-innerFlip {
+    transform: rotateY(180deg);
+  }
+  
+  .card-frontFlip,
+  .card-backFlip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-frontFlip {
+    background-color: #6A2C70;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #6A2C70;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-backFlip {
+    background-color: #F08A5D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #F08A5D;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+  /* Flippin card end */
+
+.JavaScriptButton {
+    margin: 20%;
+    position: relative;
+    float: right;
+}
